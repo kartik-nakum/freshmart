@@ -1,0 +1,122 @@
+.navbar {
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.logo-icon {
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.2);
+}
+
+.nav-link {
+    color: #495057 !important;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #198754 !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #198754;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+.search-box {
+    width: 250px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    border-color: #198754;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.1);
+}
+
+.search-box input::placeholder {
+    font-size: 13px;
+    color: #adb5bd;
+}
+
+.qty-badge {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+    border: 2px solid #ffffff;
+}
+
+.dropdown-menu {
+    border-radius: 12px !important;
+    animation: slideDown 0.3s ease-out;
+    z-index: 1050;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #198754;
+}
+
+.user-icon-btn:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex !important; /* મોબાઇલમાં સર્ચ બતાવવા માટે */
+    }
+
+    .dropdown-menu {
+        position: static !important;
+        float: none !important;
+        width: 100% !important;
+        text-align: center;
+        box-shadow: none !important;
+        background-color: #f8f9fa;
+        margin-top: 10px;
+    }
+}

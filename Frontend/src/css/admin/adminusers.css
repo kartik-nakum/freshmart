@@ -1,0 +1,115 @@
+.container.mt-5 {
+    background: transparent;
+    padding-bottom: 50px;
+}
+
+.container.mt-5 h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.badge.bg-success {
+    background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%) !important;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(48, 244, 244, 0.2);
+}
+
+.form-control.rounded-pill {
+    height: 50px;
+    border: 1px solid #e3e6f0;
+    padding-left: 55px !important;
+    font-size: 15px;
+    color: #6e707e;
+    transition: all 0.3s ease;
+}
+
+.form-control.rounded-pill:focus {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border-color: #1cc88a;
+    outline: none;
+}
+
+.ms-3.text-muted {
+    font-size: 18px;
+    left: 10px;
+}
+
+.table-responsive.shadow-sm {
+    border: 1px solid #e3e6f0;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1) !important;
+}
+
+.table-dark {
+    background-color: #4e73df !important; 
+    border: none;
+}
+
+.table-dark th {
+    padding: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fc !important;
+}
+
+.table td {
+    padding: 16px 18px;
+    vertical-align: middle;
+    color: #5a5c69;
+    font-size: 15px;
+    border-bottom: 1px solid #f1f3f9;
+}
+
+.bg-light.rounded-circle {
+    background-color: #e8f5e9 !important;
+    border: 1px solid #c8e6c9;
+    transition: 0.3s;
+}
+
+.bg-light.rounded-circle:hover {
+    transform: scale(1.1);
+}
+
+.btn-outline-danger.rounded-pill {
+    border-width: 1.5px;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger.rounded-pill:hover {
+    background-color: #e74a3b;
+    border-color: #e74a3b;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(231, 74, 59, 0.3);
+}
+h2.text-success.fw-bold {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #82b440; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .container.mt-5 h2 {
+        font-size: 22px;
+    }
+    .form-control.rounded-pill {
+        height: 45px;
+    }
+}

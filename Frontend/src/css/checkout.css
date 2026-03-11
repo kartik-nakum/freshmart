@@ -1,0 +1,49 @@
+.checkout-page {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fw-600 { font-weight: 600; }
+
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.1);
+}
+
+.order-items-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.order-items-container::-webkit-scrollbar-thumb {
+    background: #ced4da;
+    border-radius: 10px;
+}
+
+.payment-options .form-check {
+    padding: 12px 15px 12px 35px;
+    transition: background 0.2s;
+    border-radius: 8px;
+}
+
+.payment-options .form-check:hover {
+    background: #ffffff;
+}
+
+.sticky-top {
+    z-index: 10;
+}
+
+@media (max-width: 991px) {
+    .sticky-top { position: static !important; }
+}

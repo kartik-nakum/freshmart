@@ -1,0 +1,54 @@
+.contact_taital {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #82b440; 
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+.contact-page-wrapper {
+    background-color: #f8fdfa;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contact-info-card {
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateX(10px);
+}
+
+.contact-form-container {
+    border-top: 5px solid #198754;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.1);
+}
+
+.btn-success {
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}

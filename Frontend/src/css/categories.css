@@ -1,0 +1,106 @@
+.vagetables_taital {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #82b440; 
+    display: inline-block;
+    padding-bottom: 5px;
+
+}
+
+.category-sidebar {
+    background: #ffffff;
+    border: 1px solid #eee;
+    position: sticky;
+    top: 20px;
+}
+
+.category-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.category-item:hover {
+    background-color: #e8f5e9;
+    color: #198754;
+    transform: translateX(5px);
+}
+
+.active-cat {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.2);
+}
+
+.category-item .badge {
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+.veg_box {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #f0f0f0 !important;
+}
+
+.veg_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+    border-color: #198754 !important;
+}
+
+.hover01 figure img {
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.veg_box:hover .hover01 figure img {
+    transform: scale(1.05);
+}
+
+.harshal_text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.rate_text {
+    font-size: 20px;
+    color: #198754;
+}
+
+.quantity-box {
+    background-color: #f9f9f9;
+}
+
+.quantity-box button:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.btn-success.rounded-pill {
+    background-color: #198754;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-success.rounded-pill:hover {
+    background-color: #146c43;
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+@media (max-width: 768px) {
+    .vagetables_taital {
+        font-size: 30px;
+    }
+    .category-sidebar {
+        margin-bottom: 30px;
+        position: static;
+    }
+}

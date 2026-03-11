@@ -1,0 +1,128 @@
+.container.mt-5 {
+    background-color: #fbfbfb;
+    padding-bottom: 50px;
+}
+
+h2.text-success {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.alert-info {
+    background-color: #ffffff;
+    border-left: 5px solid #198754 !important;
+    color: #333;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 20px;
+}
+
+.table-responsive {
+    border-radius: 15px;
+    background: #fff;
+}
+
+.table thead th {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #e9ebef;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.cart-row:hover {
+    background-color: #fcfdfd;
+}
+
+.qty-pill {
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.qty-btn {
+    background: none;
+    border: none;
+    color: #198754;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.qty-val {
+    color: #333;
+    min-width: 25px;
+}
+
+.coupon-input-field {
+    border-radius: 10px !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.btn-apply-coupon {
+    height: 48px;
+    border-radius: 10px !important;
+    font-weight: bold;
+    padding: 0 25px;
+}
+
+.summary-card {
+    border-radius: 24px !important;
+    background: #ffffff;
+}
+
+.proceed-btn {
+    background: linear-gradient(135deg, #198754 0%, #146c43 100%) !important;
+    border: none !important;
+}
+
+.delete-icon {
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.delete-icon:hover { transform: scale(1.2); }
+
+@media (max-width: 991px) {
+    .summary-card { position: static; margin-top: 30px; }
+}
+
+
+.coupon-input-group {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.coupon-input {
+    height: 55px !important; 
+    border: 1px solid #ced4da !important;
+    border-right: none !important;
+    font-size: 16px !important;
+    padding-left: 20px !important;
+}
+
+.border-danger {
+    border: 2px solid #dc3545 !important;
+    background-color: #fff8f8;
+}
+
+.apply-btn {
+    background-color: #212529 !important;
+    color: white !important;
+    border: none !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.apply-btn:hover {
+    background-color: #000 !important;
+}
+

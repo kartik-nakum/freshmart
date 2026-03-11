@@ -1,0 +1,93 @@
+.stat-card {
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sales-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); } /* Purple-Blue */
+.orders-card { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); } /* Greenish */
+.users-card { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #333 !important; } /* Pink-Peach */
+.products-card { background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%); } /* Sky Blue */
+
+.stat-card .opacity-25 {
+    font-size: 50px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+.stat-card:hover .opacity-25 {
+    transform: scale(1.2) rotate(-10deg);
+    opacity: 0.5 !important;
+}
+
+.card.shadow-sm {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.table thead.table-light {
+    background-color: #f8f9fc;
+}
+
+.table thead th {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #e7e8eb;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 15px;
+    font-size: 14px;
+    color: #5a5c69;
+}
+
+.progress {
+    background-color: #eaecf4;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1cc88a, #13855c);
+}
+
+.badge.rounded-pill {
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+.text-success.text-decoration-none:hover {
+    color: #13855c !important;
+    text-decoration: underline !important;
+}
+h2.text-success.fw-bold {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    border-bottom: 2px solid #82b440; 
+    display: inline-block;
+    padding-bottom: 5px;
+    
+}
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgb(20, 119, 218) !important;
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 10px;
+    }
+}
