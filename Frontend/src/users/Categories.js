@@ -76,7 +76,7 @@ const Categories = ({ vegData, setVegData, addToCart, isLoggedIn, categories, se
   useEffect(() => {
     const fetchProducts = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/products");
+            const response = await fetch("https://freshmart-25n5.onrender.com/api/products");
             const data = await response.json();
             setVegData(data); 
         } catch (error) {

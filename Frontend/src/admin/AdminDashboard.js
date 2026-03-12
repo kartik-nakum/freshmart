@@ -20,8 +20,8 @@ const AdminDashboard = ({ vegData, categories }) => {
   const fetchDashboardData = async () => {
     try {
       setLoading(true);
-      const ordersRes = await fetch("http://localhost:5000/api/shop/all-orders");
-      const usersRes = await fetch("http://localhost:5000/api/all-users");
+      const ordersRes = await fetch("https://freshmart-25n5.onrender.com/api/shop/all-orders");
+      const usersRes = await fetch("https://freshmart-25n5.onrender.com/api/all-users");
       
       const ordersData = await ordersRes.json();
       const usersData = await usersRes.json();

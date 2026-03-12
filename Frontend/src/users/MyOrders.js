@@ -21,7 +21,7 @@ const MyOrders = () => {
             const currentUser = userSession.replace(/['"]+/g, '');
             try {
                 setLoading(true);
-                const res = await fetch(`http://localhost:5000/api/shop/my-orders/${encodeURIComponent(currentUser)}`);
+                const res = await fetch(`https://freshmart-25n5.onrender.com/api/shop/my-orders/${encodeURIComponent(currentUser)}`);
                 const data = await res.json();
                 if (res.ok) {
                     setOrders(data); 
@@ -51,7 +51,7 @@ const MyOrders = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const res = await fetch(`http://localhost:5000/api/shop/update-status/${mongoId}`, {
+                    const res = await fetch(`https://freshmart-25n5.onrender.com/api/shop/update-status/${mongoId}`, {
                         method: "PUT",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ status: "Cancelled" }),

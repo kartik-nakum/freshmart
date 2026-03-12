@@ -72,7 +72,7 @@ const Checkout = ({ cart, setCart, calculateTotal }) => {
         img: item.img
       }));
 
-      const res = await fetch("http://localhost:5000/api/shop/place", {
+      const res = await fetch("https://freshmart-25n5.onrender.com/api/shop/place", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 

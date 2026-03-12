@@ -24,7 +24,7 @@ const ForgotPassword = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/forgot-password", {
+      const res = await fetch("https://freshmart-25n5.onrender.com/api/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

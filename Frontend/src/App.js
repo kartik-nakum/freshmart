@@ -65,7 +65,7 @@ function App() {
     const userId = userSession ? userSession.replace(/['"]+/g, '') : "guest";
 
     try {
-      await fetch("http://localhost:5000/api/cart/update", {
+      await fetch("https://freshmart-25n5.onrender.com/api/cart/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: userId, items }) 
@@ -154,7 +154,7 @@ function App() {
   useEffect(() => {
     const fetchCats = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/categories");
+        const res = await fetch("https://freshmart-25n5.onrender.com/api/categories");
         const data = await res.json();
         setCategories(data);
       } catch (err) {
@@ -176,7 +176,7 @@ useEffect(() => {
       const email = userSession.replace(/['"]+/g, '');
       
       try {
-        const res = await fetch(`http://localhost:5000/api/wishlist/${email}`);
+        const res = await fetch(`https://freshmart-25n5.onrender.com/api/wishlist/${email}`);
         if (res.ok) {
           const data = await res.json();
           console.log("Wishlist Loaded:", data);
@@ -204,7 +204,7 @@ const toggleWishlist = async (product) => {
   const userEmail = userSession ? userSession.replace(/['"]+/g, '') : "";
 
   try {
-    const res = await fetch("http://localhost:5000/api/wishlist/toggle", {
+    const res = await fetch("https://freshmart-25n5.onrender.com/api/wishlist/toggle", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId: userEmail, productId: product._id })

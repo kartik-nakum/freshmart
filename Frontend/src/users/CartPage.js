@@ -16,7 +16,7 @@ const CartPage = ({ cart, setCart, vegData, setVegData }) => {
   const syncWithBackend = async (updatedCart) => {
     if (userId === "guest_user") return;
     try {
-      await fetch("http://localhost:5000/api/cart/update", {
+      await fetch("https://freshmart-25n5.onrender.com/api/cart/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: userId, items: updatedCart }),
@@ -30,7 +30,7 @@ const CartPage = ({ cart, setCart, vegData, setVegData }) => {
     const fetchCart = async () => {
       if (userId === "guest_user") return;
       try {
-        const res = await fetch(`http://localhost:5000/api/cart/${userId}`);
+        const res = await fetch(`https://freshmart-25n5.onrender.com/api/cart/${userId}`);
         const data = await res.json();
         if (res.ok) {
           setCart(data);

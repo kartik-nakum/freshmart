@@ -11,7 +11,7 @@ const AdminOrders = () => {
   const fetchAllOrders = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/shop/all-orders");
+      const res = await fetch("https://freshmart-25n5.onrender.com/api/shop/all-orders");
       const data = await res.json();
       setOrders(data);
     } catch (err) {

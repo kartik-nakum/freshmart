@@ -31,7 +31,7 @@ const AddProducts = ({ vegData, setVegData, categories, isLoggedIn }) => {
 
     const fetchProducts = async () => {
         try {
-            const res = await fetch("http://localhost:5000/api/products");
+            const res = await fetch("https://freshmart-25n5.onrender.com/api/products");
             const data = await res.json();
             setVegData(data);
         } catch (err) {
@@ -49,7 +49,7 @@ const AddProducts = ({ vegData, setVegData, categories, isLoggedIn }) => {
         try {
             if (editId) {
                 //  UPDATE
-                const res = await fetch(`http://localhost:5000/api/products/${editId}`, {
+                const res = await fetch(`https://freshmart-25n5.onrender.com/api/products/${editId}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -70,7 +70,7 @@ const AddProducts = ({ vegData, setVegData, categories, isLoggedIn }) => {
                 }
             } else {
                 // add
-                const res = await fetch("http://localhost:5000/api/products/add", {
+                const res = await fetch("https://freshmart-25n5.onrender.com/api/products/add", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -127,7 +127,7 @@ const AddProducts = ({ vegData, setVegData, categories, isLoggedIn }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const res = await fetch(`http://localhost:5000/api/products/${mongoId}`, {
+                    const res = await fetch(`https://freshmart-25n5.onrender.com/api/products/${mongoId}`, {
                         method: "DELETE",
                     });
 

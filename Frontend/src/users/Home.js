@@ -23,7 +23,7 @@ const Home = ({ vegData, setVegData, addToCart, isLoggedIn, categories, searchTe
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch("https://freshmart-25n5.onrender.com/api/products");
         const data = await response.json();
         setVegData(data);
       } catch (error) {
@@ -49,7 +49,7 @@ const Home = ({ vegData, setVegData, addToCart, isLoggedIn, categories, searchTe
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/contact/send", {
+      const res = await fetch("https://freshmart-25n5.onrender.com/api/contact/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -271,7 +271,7 @@ const Home = ({ vegData, setVegData, addToCart, isLoggedIn, categories, searchTe
                     </div>
                     <div className="col-md-6 mb-3">
                       <label className="form-label fw-bold">Phone Number</label>
-                      <input type="text" className="form-control rounded-3 py-2" name="phone" value={formData.phone} onChange={handleChange} placeholder="Enter phone number" required />
+                      <input type="text" className="form-control rounded-3 py-2" name="phone" value={formData.phone} onChange={handleChange} maxLength="10" placeholder="Enter phone number" required />
                     </div>
                     <div className="col-md-12 mb-3">
                       <label className="form-label fw-bold">Email Address</label>

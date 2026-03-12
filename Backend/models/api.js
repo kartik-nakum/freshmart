@@ -23,16 +23,41 @@ const Category = require("./Category")
         
 // }
 
-// cart
+// forgetpassword
+
 // {
-//   "userId": "nakum12@gmail.com",
+//        "email":"nakumkartik1@gmail.com",
+//         "newPassword":"12345678"
+// }
+
+// login
+// {
+//        "email":"nakumkartik1@gmail.com",
+//         "password":"12345678"
+// }
+
+// registre
+
+// {  "fullName":"nakum",
+//        "email":"nakum1@gmail.com",
+//        "phone":"1234567899",
+//         "password":"12345678",
+//         "role":"admin"
+// }
+
+// cart
+
+// {
+//   "userId": "nakum1@gmail.com",
 //   "items": [
 //     {
-//       "productId": "670c",
-//       "name": "Tomato",
-//       "price": 30,
+      
+//       "name": "Apple",
+//       "price": 40,
 //       "qty": 2,
-//       "img": "tomato.png"
+//       "img": "tomato.png",    
+//       "stock":"9",
+//       "weight":"500 gm"
 //     }
 //   ]
 // }
@@ -60,4 +85,20 @@ const Category = require("./Category")
 //     "paymentMode": "COD"
 //   },
 //   "totalAmount": 570
+// }
+
+
+// contact
+// {
+  
+//       "name": "Potatoes",  
+//       "phone":"444848888",
+//     "email": "abc@gmail.com",
+//     "message":"bhghy"
+// }
+
+// wishlistpahe
+// {
+//     "userId": "test@gmail.com",
+//     "productId": "65f1234567890abcdef12345"
 // }

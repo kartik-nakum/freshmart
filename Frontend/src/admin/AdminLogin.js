@@ -17,7 +17,7 @@ const AdminLogin = ({ setIsLoggedIn, setIsAdmin }) => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/login", {
+      const res = await fetch("https://freshmart-25n5.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

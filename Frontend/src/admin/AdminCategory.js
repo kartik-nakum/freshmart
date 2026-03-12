@@ -15,7 +15,7 @@ const AdminCategory = ({ categories, setCategories, vegData }) => {
 
     const fetchCategories = async () => {
         try {
-            const res = await fetch("http://localhost:5000/api/categories");
+            const res = await fetch("https://freshmart-25n5.onrender.com/api/categories");
             const data = await res.json();
             setCategories(data);
         } catch (err) {
@@ -58,13 +58,13 @@ const AdminCategory = ({ categories, setCategories, vegData }) => {
             let response;
             if (editIndex !== null) {
                 const categoryId = filteredCategories[editIndex]._id; 
-                response = await fetch(`http://localhost:5000/api/categories/update/${categoryId}`, {
+                response = await fetch(`https://freshmart-25n5.onrender.com/api/categories/update/${categoryId}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(categoryData),
                 });
             } else {
-                response = await fetch("http://localhost:5000/api/categories/add", {
+                response = await fetch("https://freshmart-25n5.onrender.com/api/categories/add", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(categoryData),
@@ -114,7 +114,7 @@ const AdminCategory = ({ categories, setCategories, vegData }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const res = await fetch(`http://localhost:5000/api/categories/${categoryId}`, {
+                    const res = await fetch(`https://freshmart-25n5.onrender.com/api/categories/${categoryId}`, {
                         method: "DELETE",
                     });
                     if (res.ok) {
