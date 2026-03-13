@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import "../css/categories.css"; 
-import { FaExclamationCircle, FaTrash, FaShoppingBag, FaArrowLeft } from "react-icons/fa";
+import { FaTrash, FaShoppingBag, FaArrowLeft } from "react-icons/fa";
 
 const WishlistPage = ({ wishlist = [], toggleWishlist, addToCart }) => {
     const navigate = useNavigate();
