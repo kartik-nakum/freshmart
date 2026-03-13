@@ -6,8 +6,10 @@ import "../css/myorders.css";
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(""); 
+    // const [loading, setLoading] = useState(true);
+    // const [error, setError] = useState(""); 
+    const [ , setLoading] = useState(true); 
+    const [ , setError] = useState("");
     const navigate = useNavigate();
 
     useEffect(() => {
