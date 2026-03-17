@@ -43,7 +43,8 @@ const AdminUsers = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch(`http://localhost:5000/api/delete-user/${userId}`, {
+          // const res = await fetch(`http://localhost:5000/api/delete-user/${userId}`, {
+            const res = await fetch(`https://freshmart-25n5.onrender.com/api/delete-user/${userId}`, {
             method: "DELETE",
           });
 

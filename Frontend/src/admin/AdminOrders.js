@@ -32,7 +32,7 @@ const AdminOrders = () => {
 
   const updateStatus = async (mongoId, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/shop/update-status/${mongoId}`, {
+      const res = await fetch(`https://freshmart-25n5.onrender.com/api/shop/update-status/${mongoId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: newStatus }),
