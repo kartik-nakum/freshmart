@@ -187,7 +187,7 @@ function App() {
                 <Route path="/shop" element={<Shop vegData={vegData} setVegData={setVegData} addToCart={addToCart} isLoggedIn={isLoggedIn} searchTerm={searchTerm} categories={categories} cart={cart} wishlist={wishlist} toggleWishlist={toggleWishlist}/>} />
                 <Route path="/product/:id" element={<ProductDetail vegData={vegData} addToCart={addToCart} isLoggedIn={isLoggedIn} />} />
                 <Route path="/categories" element={<Categories vegData={vegData} setVegData={setVegData} addToCart={addToCart} isLoggedIn={isLoggedIn} categories={categories} cart={cart} wishlist={wishlist} toggleWishlist={toggleWishlist} />} />
-                <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} vegData={vegData} setVegData={setVegData}/>} />
+                <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} syncWithBackend={syncCartToBackend}/>} />
                 <Route path="/checkout" element={<Checkout cart={cart} setCart={setCart} calculateTotal={calculateTotal} />} />
                 <Route path="/order-success" element={<OrderSuccess />} />
                 <Route path="/myOrders" element={<MyOrders addToCart={addToCart} isLoggedIn={isLoggedIn}/>} />
