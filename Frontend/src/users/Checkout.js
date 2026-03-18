@@ -85,6 +85,19 @@ const Checkout = ({ cart, setCart, calculateTotal }) => {
       const data = await res.json();
 
       if (res.ok && data.success) {
+
+        try {
+                await fetch("https://freshmart-25n5.onrender.com/api/cart/update", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ 
+                        userId: formData.email,
+                        items: [] 
+                    })
+                });
+            } catch (err) {
+                console.error("DB Cart Clear Error:", err);
+            }
         setCart([]); 
         
         Swal.fire({
