@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaLeaf, FaSignOutAlt, FaTachometerAlt, FaBox, FaTruck, FaThList, FaUsers } from "react-icons/fa";
+import { FaLeaf, FaSignOutAlt, FaTachometerAlt, FaBox, FaTruck, FaThList, FaUsers, FaUserPlus } from "react-icons/fa";
 import Swal from 'sweetalert2';
 import "../css/admin/adminsidebar.css"
 
@@ -49,6 +49,7 @@ const AdminSidebar = ({ setIsAdmin }) => {
     { name: "Orders", path: "/admin/orders", icon: <FaTruck /> },
     { name: "Categories", path: "/admin/categories", icon: <FaThList /> },
     { name: "Users", path: "/admin/users", icon: <FaUsers /> },
+    { name: "Add New Admin", path: "/admin/register", icon: <FaUserPlus /> }, 
   ];
 
   return (

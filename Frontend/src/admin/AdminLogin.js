@@ -132,7 +132,7 @@ const AdminLogin = ({ setIsLoggedIn, setIsAdmin }) => {
         
         <div className="extra-links">
           <Link to="/admin/forgot-password" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Forgot Password?</Link>
-          <p className="mt-3">Don't have an account? <Link to="/admin/register" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Register here</Link></p>
+          {/* <p className="mt-3">Don't have an account? <Link to="/admin/register" style={{ fontWeight: 'bold', textDecoration: 'none' }}>Register here</Link></p> */}
         </div>
       </form>
     </div>
