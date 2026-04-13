@@ -195,7 +195,6 @@ useEffect(() => {
                         </div>
                         
                         <h5 className="fw-bold text-dark">{item.name}</h5>
-                        
                         <div className="price-section mb-4">
                           <span className="rate_text h5 fw-bold text-success">
                             ₹{item.price} <span className="text-muted fw-normal" style={{ fontSize: '14px' }}>/ {item.weight}</span>

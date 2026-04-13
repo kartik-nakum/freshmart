@@ -19,7 +19,6 @@ const AdminSidebar = ({ setIsAdmin }) => {
       confirmButtonText: 'Yes, Logout'
     }).then((result) => {
       if (result.isConfirmed) {
-        // Clear sessions
         sessionStorage.removeItem("isAdmin");
         sessionStorage.removeItem("isLoggedIn");
         sessionStorage.removeItem("userName");
@@ -27,7 +26,6 @@ const AdminSidebar = ({ setIsAdmin }) => {
         
         if (setIsAdmin) setIsAdmin(false);
 
-        // Success Feedback
         Swal.fire({
           icon: 'success',
           title: 'Logged Out',
