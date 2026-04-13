@@ -1,7 +1,5 @@
 // Product
 
-const { checkout } = require("../routes/shopRoutes")
-const Category = require("./Category")
 
 // {
 //         "name": "banana1",
