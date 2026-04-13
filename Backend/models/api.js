@@ -1,6 +1,7 @@
 // Product
 
 
+
 // {
 //         "name": "banana1",
 //         "weight": "500 gm",
@@ -103,5 +104,4 @@
 
 
 // a code online no batave
-
 // GENERATE_SOURCEMAP=false

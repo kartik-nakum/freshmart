@@ -249,17 +249,18 @@ const Home = ({ vegData, setVegData, addToCart, isLoggedIn, categories, searchTe
                   </div>
                 </div>
               </div>
-              <div className="contact-info-card p-4 shadow-sm rounded-4 bg-white border-start border-success border-4">
-                <div className="d-flex align-items-center">
-                  <div className="icon-box bg-success text-white rounded-circle me-3 text-center" style={{ width: '40px', height: '40px', lineHeight: '40px' }}>
-                    <FaMapMarkerAlt />
-                  </div>
-                  <div>
-                    <h6 className="m-0 fw-bold">Our Location</h6>
-                    <p className="m-0 text-muted">310, Relief Shopping Centre, Nr.gpo, Salapose Road, Jamnagar</p>
-                  </div>
+           
+                <div className="contact-info-card p-4 shadow-sm rounded-4 mb-3 bg-white border-start border-success border-4">
+                  <div className="d-flex align-items-center">
+                      <div className="icon-box bg-success text-white rounded-circle me-3 text-center" style={{width:'40px', height:'40px', lineHeight:'40px'}}>
+                        <FaMapMarkerAlt />
+                      </div>
+                      <div>
+                        <h6 className="m-0 fw-bold">Our Location</h6>
+                        <p className="m-0 text-muted">310, Relief Shopping Centre, Nr.gpo, Salapose Road, Jamnagar</p>
+                      </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div className="col-lg-8">
               <div className="contact-form-container p-4 p-md-5 shadow-lg rounded-4 bg-white">
